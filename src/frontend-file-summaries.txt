@@ -1,0 +1,20 @@
+{
+  "frontend/src/index.css": "Minimal and bold OKLCH color system with enhanced contrast, larger border radius, and premium gradient tokens for clean UI design.",
+  "frontend/src/App.tsx": "Minimal root component that wraps the main page with theme provider and toast notifications, no authentication flow.",
+  "frontend/src/hooks/useQueries.ts": "Simplified React Query hooks for fetching UPI ID, available UPI apps, and submitting UTR without authentication-related queries.",
+  "frontend/src/pages/LoginPage.tsx": "Premium landing page showcasing UPI payment gateway features with gradient design and Internet Identity authentication.",
+  "frontend/src/components/ProfileSetup.tsx": "First-time user profile setup modal with premium gradient design for collecting user's name after authentication.",
+  "frontend/src/pages/Dashboard.tsx": "Main dashboard container managing navigation between home and admin sections for the UPI payment gateway.",
+  "frontend/src/components/Header.tsx": "Responsive navigation header with gradient branding, section navigation, theme toggle, and user profile dropdown with conditional admin access.",
+  "frontend/src/components/Footer.tsx": "Simple footer with attribution and link to caffeine.ai.",
+  "frontend/src/components/DashboardHome.tsx": "Dashboard home view displaying overview cards, recent journal entries, habit progress, and latest creative ideas with quick navigation.",
+  "frontend/src/components/JournalSection.tsx": "Journal management interface with mood-tagged entries, creation dialog, and chronological entry display using React.ReactElement for icon type definitions.",
+  "frontend/src/components/HabitSection.tsx": "Habit tracker with creation dialog, progress visualization, streak tracking, and completion toggle functionality.",
+  "frontend/src/components/CreativeSection.tsx": "Creative ideas board with categorized idea cards, creation dialog, and category filtering.",
+  "frontend/src/components/CalendarSection.tsx": "Monthly calendar view with date selection and habit completion details for selected dates, using React.ReactElement array typing for proper TypeScript compatibility.",
+  "frontend/src/components/HomePage.tsx": "Main payment interface displaying UPI ID, payment wallet card, step-by-step guide, and navigation to UPI app selection and UTR submission.",
+  "frontend/src/components/UPIAppSelector.tsx": "Minimal, highlight-focused UPI app selection screen with large clickable app icons, UPI ID display, and deep linking to payment apps.",
+  "frontend/src/components/UTRSubmissionForm.tsx": "Clean UTR submission form with highlighted input, clear instructions, success confirmation, and minimal distractions.",
+  "frontend/src/components/AdminPanel.tsx": "Admin-only panel displaying all UTR submissions in a table with user information, timestamps, and submission statistics.",
+  "frontend/src/pages/MainPage.tsx": "Main page component managing navigation between UPI app selection and UTR submission screens."
+}

@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 1.25rem;
+        /* Minimal & Bold UPI Payment Gateway color palette */
+        --background: 0.99 0.005 260;
+        --foreground: 0.12 0.02 260;
+        --card: 1 0 0;
+        --card-foreground: 0.12 0.02 260;
+        --popover: 1 0 0;
+        --popover-foreground: 0.12 0.02 260;
+        --primary: 0.48 0.28 265;
+        --primary-foreground: 1 0 0;
+        --secondary: 0.52 0.24 220;
+        --secondary-foreground: 1 0 0;
+        --muted: 0.95 0.01 260;
+        --muted-foreground: 0.42 0.02 260;
+        --accent: 0.58 0.26 280;
+        --accent-foreground: 1 0 0;
+        --destructive: 0.55 0.28 20;
+        --destructive-foreground: 1 0 0;
+        --border: 0.90 0.01 260;
+        --input: 0.94 0.01 260;
+        --ring: 0.48 0.28 265;
+        --chart-1: 0.48 0.28 265;
+        --chart-2: 0.52 0.24 220;
+        --chart-3: 0.58 0.26 280;
+        --chart-4: 0.62 0.22 140;
+        --chart-5: 0.58 0.24 320;
+        
+        /* Premium gradient colors */
+        --gradient-start: 0.48 0.28 265;
+        --gradient-mid: 0.52 0.24 240;
+        --gradient-end: 0.58 0.26 280;
+        --success: 0.62 0.22 140;
+        --success-foreground: 1 0 0;
+    }
+
+    .dark {
+        --background: 0.10 0.02 260;
+        --foreground: 0.96 0.01 260;
+        --card: 0.14 0.02 260;
+        --card-foreground: 0.96 0.01 260;
+        --popover: 0.12 0.02 260;
+        --popover-foreground: 0.96 0.01 260;
+        --primary: 0.62 0.28 265;
+        --primary-foreground: 0.10 0.02 260;
+        --secondary: 0.66 0.24 220;
+        --secondary-foreground: 0.96 0.01 260;
+        --muted: 0.20 0.02 260;
+        --muted-foreground: 0.58 0.02 260;
+        --accent: 0.72 0.26 280;
+        --accent-foreground: 0.96 0.01 260;
+        --destructive: 0.60 0.28 20;
+        --destructive-foreground: 0.96 0.01 260;
+        --border: 0.24 0.02 260;
+        --input: 0.22 0.02 260;
+        --ring: 0.62 0.28 265;
+        --chart-1: 0.62 0.28 265;
+        --chart-2: 0.66 0.24 220;
+        --chart-3: 0.72 0.26 280;
+        --chart-4: 0.72 0.22 140;
+        --chart-5: 0.66 0.24 320;
+        
+        /* Premium gradient colors for dark mode */
+        --gradient-start: 0.62 0.28 265;
+        --gradient-mid: 0.66 0.24 240;
+        --gradient-end: 0.72 0.26 280;
+        --success: 0.72 0.22 140;
+        --success-foreground: 0.96 0.01 260;
+    }
+
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+@layer utilities {
+    .gradient-premium {
+        background: linear-gradient(135deg, 
+            oklch(var(--gradient-start)) 0%, 
+            oklch(var(--gradient-mid)) 50%, 
+            oklch(var(--gradient-end)) 100%);
+    }
+    
+    .gradient-premium-text {
+        background: linear-gradient(135deg, 
+            oklch(var(--gradient-start)) 0%, 
+            oklch(var(--gradient-mid)) 50%, 
+            oklch(var(--gradient-end)) 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
